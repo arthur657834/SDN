@@ -1,0 +1,5 @@
+控制器将向s0和s1发送flow_stats_request，当控制器接收到来自s0的response时，将特定流的数据包数保存在input_pkts中，当控制器接收到来自s1的response时，将接收到特定流的数据包数保存在output_pkts中，差值就是丢失的数据包数量。
+
+./pox.py flow_stats
+
+python path_cost.py
